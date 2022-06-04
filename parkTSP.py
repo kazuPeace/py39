@@ -91,8 +91,9 @@ def main():
             shortestBinary=routeBinary.copy()
         temp-=step
     print(shortest)
-    print(shortestBinary)
     print(np.sum(shortestBinary*distances))
+    for i in range(len(shortest)):
+        print(dataList[int(shortest[i])][0])
     
     return 0
     
